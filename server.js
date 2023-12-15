@@ -11,10 +11,10 @@ app.engine("jsx", require("express-react-views").createEngine())
 app.use(express.urlencoded({extended:false}));
 // --> Parse URLencoded responses [req.body*]
 
-app.use((req, res, next) => {
-    console.log('I run for all routes');
-    next();
-});
+// app.use((req, res, next) => {
+//     console.log('I run for all routes');
+//     next();
+// });
 // --> Intercept reqRes proccess and manage dataFlow
 // ---------------------------------[Middleware]
 
